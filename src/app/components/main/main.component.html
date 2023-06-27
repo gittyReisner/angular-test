@@ -1,14 +1,15 @@
 <section class="container" >
   <div class="header">
-    Header
+    Notification
   </div>
   <article class="element">
     <h2>Article</h2>
-    <p>Article content</p>
+    <app-notifications-container></app-notifications-container>
   </article>
   <div class="button-row">
-    <button type="button" >
-      Notify
-    </button>
+    <button (click)="addNotification('success')">Notify</button>
+    <button (click)="addNotification('error')">Error</button>
+    <button (click)="addNotification('log')">Log</button>
   </div>
 </section>
+

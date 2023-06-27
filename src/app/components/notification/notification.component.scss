@@ -1,0 +1,17 @@
+.notification {
+  border-top: 5px solid;
+  padding: 0.25rem;
+  font-size: 15px;
+}
+
+.error {
+  border-color: red;
+}
+
+.success {
+  border-color: green;
+}
+
+.log {
+  border-color: orange;
+}

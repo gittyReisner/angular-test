@@ -1,0 +1,4 @@
+<div class="notification" [ngClass]="{'error': notification?.type === 'error', 'success': notification?.type === 'success', 'log': notification?.type === 'log'}">
+  <h4>{{notification?.title}}</h4>
+  <p>{{notification?.message}}</p>
+</div>
