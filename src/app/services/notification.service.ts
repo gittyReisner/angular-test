@@ -13,6 +13,9 @@ export class NotificationService {
     }
     this.notifications.push(notification);
     this.notifications$.next(this.notifications);
+    setTimeout(() => {
+        this.removeNotification(notification.id);
+      }, 5000);
   }
 
   removeNotification(id: number): void {
